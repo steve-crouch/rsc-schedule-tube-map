@@ -1,0 +1,14 @@
+{
+  "name": "ssi-rsc-schedule-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Crouch",
+  "license": "MIT",
+  "dependencies": {
+    "d3-tube-map": "^1.5.0"
+  }
+}

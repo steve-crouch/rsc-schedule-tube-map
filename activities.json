@@ -1,0 +1,407 @@
+{
+  "stations": {
+    "SoftwareSurgery": {
+      "name": "Software Surgery",
+      "label": "Software Surgery",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "ComputationalSkills": {
+      "name": "Computational Skills (Python or R)",
+      "label": "Computational\nSkills",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "GoodEnoughPractices": {
+      "name": "Good Enough Scientific Computing Practices",
+      "label": "Good Enough Scientific\nComputing Practices",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "ManagingAcademicSoftwareDev": {
+      "name": "Managing Academic Software Development",
+      "label": "Managing Academic\nSoftware Development",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "Mentorship": {
+      "name": "Mentorship",
+      "label": "Mentorship",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "IntermediateRSSkills": {
+      "name": "Intermediate RS Skills",
+      "label": "Intermediate\nRS Skills",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "TasterWorkingWithCarpInf": {
+      "name": "Taster Working with Carpentries Lesson Infrastructure",
+      "label": "Taster Working with Carpentries\nLesson Infrastructure",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "TasterLessonDevelopment": {
+      "name": "Taster Lesson Development Workshop",
+      "label": "Taster Lesson\nDevelopment Workshop",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "BuildingWebsitesWithJekyll": {
+      "name": "Building Websites with Jekyll & GitHub Pages",
+      "label": "Building Websites\nwith Jekyll &\nGitHub Pages",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "TasterInstructorTraining": {
+      "name": "Taster Instructor Training",
+      "label": "Taster Instructor Training",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.software.ac.uk/",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    }
+  },
+  "lines": [
+    {
+      "name": "ResearcherDeveloper",
+      "label": "Researcher Developer",
+      "color": "#d9ead3",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [0, 14]
+        },
+        {
+          "coords": [7, 14]
+        },
+        {
+          "coords": [8, 13]
+        },
+        {
+          "coords": [8, 1],
+          "marker": "interchange",
+          "name": "SoftwareSurgery",
+          "labelPos": "S",
+          "shiftCoords": [0.6, -0.4],
+          "canonical": false
+        },
+        {
+          "coords": [9, 0]
+        },
+        {
+          "coords": [14, 0]
+        },
+        {
+          "coords": [15, 1]
+        },
+        {
+          "coords": [15, 13]
+        },
+        {
+          "coords": [16, 14]
+        },
+        {
+          "coords": [22, 14],
+          "name": "ComputationalSkills",
+          "labelPos": "S",
+          "shiftCoords": [0, 0],
+          "hide": false
+        },
+        {
+          "coords": [29, 14]
+        },
+        {
+          "coords": [30, 13]
+        },
+        {
+          "coords": [30, 12],
+          "name": "GoodEnoughPractices",
+          "labelPos": "E",
+          "shiftCoords": [0, 1],
+          "hide": false
+        },
+        {
+          "coords": [30, 8],
+          "marker": "interchange",
+          "name": "ManagingAcademicSoftwareDev",
+          "labelPos": "SE",
+          "shiftCoords": [0, -1.3],
+          "labelShiftCoords": [0, -1.5],
+          "hide": false
+        },
+        {
+          "coords": [31, 7]
+        },
+        {
+          "coords": [69, 7]
+        },
+        {
+          "coords": [70, 6]
+        },
+        {
+          "coords": [70, 0],
+          "marker": "interchange",
+          "name": "Mentorship",
+          "labelPos": "SE",
+          "shiftCoords": [0, 0],
+          "labelShiftCoords": [0, 0],
+          "canonical": true
+        }
+      ]
+    },
+    {
+      "name": "IntermediateRSE",
+      "label": "Intermediate RSE",
+      "color": "#ffe599",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [0, 7]
+        },
+        {
+          "coords": [6, 7]
+        },
+        {
+          "coords": [7, 6]
+        },
+        {
+          "coords": [7, 0],
+          "marker": "interchange",
+          "name": "SoftwareSurgery",
+          "labelPos": "S",
+          "shiftCoords": [0.6, -0.8],
+          "canonical": true
+        },
+        {
+          "coords": [8, -1]
+        },
+        {
+          "coords": [15, -1]
+        },
+        {
+          "coords": [16, 0]
+        },
+        {
+          "coords": [16, 6]
+        },
+        {
+          "coords": [17, 7]
+        },
+        {
+          "coords": [29, 7]
+        },
+        {
+          "coords": [30, 6]
+        },
+        {
+          "coords": [30, 1]
+        },
+        {
+          "coords": [31, 0]
+        },
+        {
+          "coords": [43, 0],
+          "marker": "interchange",
+          "name": "IntermediateRSSkills",
+          "labelPos": "SE",
+          "shiftCoords": [-0.3, -0.2],
+          "labelShiftCoords": [-0.3, -2.2],
+          "canonical": true
+        },
+        {
+          "coords": [70, 0],
+          "marker": "interchange",
+          "name": "Mentorship",
+          "labelPos": "SE"
+        }
+      ]
+    },
+    {
+      "name": "TrainingMaterialsCreator",
+      "label": "Training Materials Creator",
+      "color": "#f4cccc",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [0, -9]
+        },
+        {
+          "coords": [14, -9],
+          "marker": "interchange",
+          "name": "TasterWorkingWithCarpInf",
+          "labelPos": "NE",
+          "shiftCoords": [-0.6, -1],
+          "labelShiftCoords": [0, 1.5],
+          "canonical": true
+        },
+        {
+          "coords": [43, -9],
+          "marker": "interchange",
+          "name": "TasterLessonDevelopment",
+          "labelPos": "SE",
+          "shiftCoords": [0.4, -1.7],
+          "labelShiftCoords": [1, -1.2],
+          "canonical": true
+        },
+        {
+          "coords": [44, -8]
+        },
+        {
+          "coords": [44, -2.5]
+        },
+        {
+          "coords": [45, -1.5],
+          "marker": "interchange",
+          "name": "IntermediateRSSkills",
+          "labelPos": "SE",
+          "canonical": false,
+          "hide": true
+        },
+        {
+          "coords": [63, -1.5],
+          "name": "BuildingWebsitesWithJekyll",
+          "labelPos": "S",
+          "shiftCoords": [0, -0.8]
+        },
+        {
+          "coords": [70, -1.5],
+          "marker": "interchange",
+          "name": "Mentorship",
+          "labelPos": "SE",
+          "canonical": false
+        }
+      ]
+    },
+    {
+      "name": "InstructorTrainer",
+      "label": "Instructor/Trainer",
+      "color": "#c9daf8",
+      "shiftCoords": [0, 0],
+      "nodes": [
+        {
+          "coords": [0, -18]
+        },
+        {
+          "coords": [13, -18]
+        },
+        {
+          "coords": [14, -17]
+        },
+        {
+          "coords": [14, -16],
+          "name": "TasterInstructorTraining",
+          "labelPos": "E",
+          "shiftCoords": [0, -1],
+          "labelShiftCoords": [0.5, -1],
+          "canonical": true,
+          "hide": false
+        },
+        {
+          "coords": [14, -9]
+        },
+        {
+          "coords": [15, -8],
+          "marker": "interchange",
+          "name": "TasterWorkingWithCarpInf",
+          "labelPos": "NE",
+          "shiftCoords": [0, 0],
+          "labelShiftCoords": [0, 1.5],
+          "canonical": false,
+          "hide": true
+        },
+        {
+          "coords": [42, -8]
+        },
+        {
+          "coords": [43, -7],
+          "marker": "interchange",
+          "name": "TasterLessonDevelopment",
+          "labelPos": "SE",
+          "shiftCoords": [0, 0],
+          "labelShiftCoords": [1, -1.2],
+          "canonical": false
+        },
+        {
+          "coords": [43, -1.7]
+        },
+        {
+          "coords": [44, -0.7],
+          "marker": "interchange",
+          "name": "IntermediateRSSkills",
+          "labelPos": "SE",
+          "labelShiftCoords": [0, -1.2],
+          "canonical": false,
+          "hide": true
+        },
+        {
+          "coords": [70, -0.7],
+          "marker": "interchange",
+          "name": "Mentorship",
+          "labelPos": "SE",
+          "canonical": false,
+          "hide": true
+        }
+      ]
+    }
+  ]
+}
