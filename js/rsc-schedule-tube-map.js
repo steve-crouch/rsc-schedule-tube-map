@@ -15,7 +15,7 @@ d3.json(json_datafile)
       top: 20,
       right: 20,
       bottom: 40,
-      left: 100,
+      left: 300,
     })
     .on("click", function (name) {
       window.location.href = activities.stations[name].website;
@@ -39,4 +39,5 @@ d3.json(json_datafile)
   function zoomed(event) {
     svg.select("g").attr("transform", event.transform.toString());
   }
+
 });
