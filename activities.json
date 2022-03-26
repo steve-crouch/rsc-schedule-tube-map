@@ -73,8 +73,8 @@
       }
     },
     "TasterWorkingWithCarpInf": {
-      "name": "Taster Working with Carpentries Lesson Infrastructure",
-      "label": "Taster Working with Carpentries\nLesson Infrastructure",
+      "name": "Taster: Working with Carpentries Lesson Infrastructure",
+      "label": "Taster: Working with Carpentries\nLesson Infrastructure",
       "place_id": "<none>",
       "address": "<none>",
       "website": "https://www.software.ac.uk/",
@@ -85,8 +85,8 @@
       }
     },
     "TasterLessonDevelopment": {
-      "name": "Taster Lesson Development Workshop",
-      "label": "Taster Lesson\nDevelopment Workshop",
+      "name": "Taster: Lesson Development Workshop",
+      "label": "Taster: Lesson\nDevelopment Workshop",
       "place_id": "<none>",
       "address": "<none>",
       "website": "https://www.software.ac.uk/",
@@ -109,8 +109,8 @@
       }
     },
     "TasterInstructorTraining": {
-      "name": "Taster Instructor Training",
-      "label": "Taster Instructor Training",
+      "name": "Taster: Instructor Training",
+      "label": "Taster: Instructor Training",
       "place_id": "<none>",
       "address": "<none>",
       "website": "https://www.software.ac.uk/",
@@ -124,8 +124,9 @@
   "lines": [
     {
       "name": "ResearcherDeveloper",
-      "label": "Researcher Developer",
+      "label": "Researcher\nDeveloper",
       "color": "#d9ead3",
+      "_textCoords": [0, 14],
       "shiftCoords": [0, 0],
       "nodes": [
         {
@@ -211,7 +212,7 @@
     },
     {
       "name": "IntermediateRSE",
-      "label": "Intermediate RSE",
+      "label": "Intermediate\nRSE",
       "color": "#ffe599",
       "shiftCoords": [0, 0],
       "nodes": [
@@ -278,15 +279,15 @@
     },
     {
       "name": "TrainingMaterialsCreator",
-      "label": "Training Materials Creator",
+      "label": "Training\nMaterials\nCreator",
       "color": "#f4cccc",
-      "shiftCoords": [0, 0],
+      "shiftCoords": [0, -0.8],
       "nodes": [
         {
-          "coords": [0, -9]
+          "coords": [0, -8.6]
         },
         {
-          "coords": [14, -9],
+          "coords": [14, -8.6],
           "marker": "interchange",
           "name": "TasterWorkingWithCarpInf",
           "labelPos": "NE",
@@ -295,7 +296,7 @@
           "canonical": true
         },
         {
-          "coords": [43, -9],
+          "coords": [43.2, -8.6],
           "marker": "interchange",
           "name": "TasterLessonDevelopment",
           "labelPos": "SE",
@@ -304,13 +305,13 @@
           "canonical": true
         },
         {
-          "coords": [44, -8]
+          "coords": [44.2, -7]
         },
         {
-          "coords": [44, -2.5]
+          "coords": [44.2, -1.8]
         },
         {
-          "coords": [45, -1.5],
+          "coords": [45.2, -0.8],
           "marker": "interchange",
           "name": "IntermediateRSSkills",
           "labelPos": "SE",
@@ -318,13 +319,13 @@
           "hide": true
         },
         {
-          "coords": [63, -1.5],
+          "coords": [63, -0.8],
           "name": "BuildingWebsitesWithJekyll",
           "labelPos": "S",
           "shiftCoords": [0, -0.8]
         },
         {
-          "coords": [70, -1.5],
+          "coords": [70, -0.8],
           "marker": "interchange",
           "name": "Mentorship",
           "labelPos": "SE",
@@ -334,7 +335,7 @@
     },
     {
       "name": "InstructorTrainer",
-      "label": "Instructor/Trainer",
+      "label": "Instructor/\nTrainer",
       "color": "#c9daf8",
       "shiftCoords": [0, 0],
       "nodes": [

@@ -1,3 +1,30 @@
+function wrap(text) {
+  /**
+   * Reformat svg text over multiple lines, with middle vertical alignment
+   * @param  {Element} text SVG text element to apply wrapping
+   */ 
+  text.each(function () {
+    var text = d3.select(this);
+    var lines = text.text().split(/\n/);
+
+    var y = text.attr('y');
+    var x = text.attr('x');
+    var dy = parseFloat(text.attr('dy')) - ((lines.length * 1.1)/2) + 0.55;
+
+    text.text(null);
+
+    for (var lineNum = 0; lineNum < lines.length; lineNum++) {
+      text
+        .append('tspan')
+        .attr('x', x)
+        .attr('y', y)
+        .attr('dy', lineNum * 1.1 + dy + 'em')
+        .attr('dominant-baseline', "middle")
+        .text(lines[lineNum]);
+    }
+  });
+}
+
 var container = d3.select("#tube-map");
 var json_datafile = container.attr("data-csv");
 var width = 1600;
@@ -12,15 +39,14 @@ d3.json(json_datafile)
     .width(width)
     .height(height)
     .margin({
-      top: 20,
-      right: 20,
-      bottom: 40,
-      left: 300,
+      top: 60,
+      right: 60,
+      bottom: 60,
+      left: 400,
     })
     .on("click", function (name) {
       window.location.href = activities.stations[name].website;
     });
-
   container.datum(activities).call(map);
 
   var svg = container.select("svg");
@@ -35,6 +61,30 @@ d3.json(json_datafile)
     initialTranslate[0],
     initialTranslate[1]
   );
+
+  // Revisit each line adding its label anchored to the first line waypoint
+  svg.select(".lines").selectAll("path").each(function (d, i) {
+    // Extract first waypoint coords from path
+    var x = d3.select(this).node().getPointAtLength(0).x
+    var y = d3.select(this).node().getPointAtLength(0).y
+    var roleName = this.id;
+
+    activities.lines.forEach(function (line) {
+      if (line.name == roleName) {
+        svg.select("g")
+          .append("text")
+          .attr("x", x - 20)
+          .attr("y", y)
+          .attr("dy", 0)
+          .attr("text-anchor", "end")
+          .attr("class", "title")
+          .style("font-size", "32px")
+          .style("font-weight", "bold")
+          .text(line.label)
+          .call(wrap);    // reformat the text over multiple lines
+      }
+    });
+  });
 
   function zoomed(event) {
     svg.select("g").attr("transform", event.transform.toString());
