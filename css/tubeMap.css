@@ -17,6 +17,23 @@ text {
   font-weight: normal;
 }
 
+.svg-map-container {
+  display: inline-block;
+  border: 1px solid lightgray;
+  position: relative;
+  width: 80%;
+  padding-bottom: 32%;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-map-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .title {
   font-family: "Roboto Mono", sans-serif;
   font-size: 18px;

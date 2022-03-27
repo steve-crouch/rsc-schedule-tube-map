@@ -27,8 +27,8 @@ function wrap(text) {
 
 var container = d3.select("#tube-map");
 var json_datafile = container.attr("data-csv");
-var width = 1600;
-var height = 1000;
+var width = 300;
+var height = 300;
 
 d3.json(json_datafile)
 .then(jsondata => {
@@ -36,13 +36,13 @@ d3.json(json_datafile)
 
   var map = d3
     .tubeMap()
-    .width(width)
-    .height(height)
+    //.width(width)
+    //.height(height)
     .margin({
       top: 60,
       right: 60,
       bottom: 60,
-      left: 400,
+      left: 300,
     })
     .on("click", function (name) {
       window.location.href = activities.stations[name].website;
@@ -50,17 +50,22 @@ d3.json(json_datafile)
   container.datum(activities).call(map);
 
   var svg = container.select("svg");
+  svg
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "150 30 625 50")
+    .attr("class", "svg-map-content");
+
 
   zoom = d3.zoom().scaleExtent([0.3, 6]).on("zoom", zoomed);
   var zoomContainer = svg.call(zoom);
-  var initialScale = 0.6;
+  var initialScale = 1;
   var initialTranslate = [0, 0];
   zoom.scaleTo(zoomContainer, initialScale);
-  zoom.translateTo(
+  /*zoom.translateTo(
     zoomContainer,
     initialTranslate[0],
     initialTranslate[1]
-  );
+  );*/
 
   // Revisit each line adding its label anchored to the first line waypoint
   svg.select(".lines").selectAll("path").each(function (d, i) {
@@ -78,7 +83,7 @@ d3.json(json_datafile)
           .attr("dy", 0)
           .attr("text-anchor", "end")
           .attr("class", "title")
-          .style("font-size", "32px")
+          .style("font-size", "1em")
           .style("font-weight", "bold")
           .text(line.label)
           .call(wrap);    // reformat the text over multiple lines
@@ -89,5 +94,15 @@ d3.json(json_datafile)
   function zoomed(event) {
     svg.select("g").attr("transform", event.transform.toString());
   }
+
+/*
+  function updateWindow(){
+    x = w.innerWidth || e.clientWidth || g.clientWidth;
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+    svg.attr("width", x).attr("height", y);
+  }
+*/
+//  d3.select(window).on('resize.updatesvg', updateWindow);
 
 });
