@@ -22,7 +22,8 @@ text {
   border: 1px solid lightgray;
   position: relative;
   width: 80%;
-  padding-bottom: 32%;
+  /* height: 400px; */
+  /* padding-bottom: 35%; */
   vertical-align: top;
   overflow: hidden;
 }

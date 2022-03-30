@@ -2,7 +2,7 @@ function wrap(text) {
   /**
    * Reformat svg text over multiple lines, with middle vertical alignment
    * @param  {Element} text SVG text element to apply wrapping
-   */ 
+   */
   text.each(function () {
     var text = d3.select(this);
     var lines = text.text().split(/\n/);
@@ -27,8 +27,7 @@ function wrap(text) {
 
 var container = d3.select("#tube-map");
 var json_datafile = container.attr("data-csv");
-var width = 300;
-var height = 300;
+var height = container.attr("height");
 
 d3.json(json_datafile)
 .then(jsondata => {
@@ -36,36 +35,23 @@ d3.json(json_datafile)
 
   var map = d3
     .tubeMap()
-    //.width(width)
-    //.height(height)
     .margin({
-      top: 60,
-      right: 60,
-      bottom: 60,
-      left: 300,
+      top: 10,
+      right: 10,
+      bottom: 10,
+      left: 10,
     })
     .on("click", function (name) {
       window.location.href = activities.stations[name].website;
     });
   container.datum(activities).call(map);
+  container.style("height", height);
 
   var svg = container.select("svg");
   svg
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "150 30 625 50")
+    .attr("viewBox", "0 0 800 400")
     .attr("class", "svg-map-content");
-
-
-  zoom = d3.zoom().scaleExtent([0.3, 6]).on("zoom", zoomed);
-  var zoomContainer = svg.call(zoom);
-  var initialScale = 1;
-  var initialTranslate = [0, 0];
-  zoom.scaleTo(zoomContainer, initialScale);
-  /*zoom.translateTo(
-    zoomContainer,
-    initialTranslate[0],
-    initialTranslate[1]
-  );*/
 
   // Revisit each line adding its label anchored to the first line waypoint
   svg.select(".lines").selectAll("path").each(function (d, i) {
@@ -78,31 +64,37 @@ d3.json(json_datafile)
       if (line.name == roleName) {
         svg.select("g")
           .append("text")
-          .attr("x", x - 20)
+          .attr("x", x - 10)
           .attr("y", y)
           .attr("dy", 0)
           .attr("text-anchor", "end")
           .attr("class", "title")
-          .style("font-size", "1em")
+          .style("font-size", "1.0em")
           .style("font-weight", "bold")
           .text(line.label)
           .call(wrap);    // reformat the text over multiple lines
       }
     });
+
   });
 
+  var zoom = d3.zoom()
+    .scaleExtent([0.9, 1.5])
+    .translateExtent([[-120, -30], [750, height]])
+    .on("zoom", zoomed);
+  var zoomContainer = svg.call(zoom);
+  var initialScale = 0.9;
+  zoom.scaleTo(zoomContainer, initialScale);
+
+  var initialTranslate = [0, 60];
+  zoom.translateTo(
+    zoomContainer,
+    initialTranslate[0],
+    initialTranslate[1]
+  );
+
   function zoomed(event) {
-    svg.select("g").attr("transform", event.transform.toString());
+    svg.select("g").attr("transform", event.transform);
   }
-
-/*
-  function updateWindow(){
-    x = w.innerWidth || e.clientWidth || g.clientWidth;
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-
-    svg.attr("width", x).attr("height", y);
-  }
-*/
-//  d3.select(window).on('resize.updatesvg', updateWindow);
 
 });

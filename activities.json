@@ -125,7 +125,7 @@
     {
       "name": "ResearcherDeveloper",
       "label": "Researcher\nDeveloper",
-      "color": "#d9ead3",
+      "color": "#d55e00",
       "_textCoords": [0, 14],
       "shiftCoords": [0, 0],
       "nodes": [
@@ -213,7 +213,7 @@
     {
       "name": "IntermediateRSE",
       "label": "Intermediate\nRSE",
-      "color": "#ffe599",
+      "color": "#0072b2",
       "shiftCoords": [0, 0],
       "nodes": [
         {
@@ -280,7 +280,7 @@
     {
       "name": "TrainingMaterialsCreator",
       "label": "Training\nMaterials\nCreator",
-      "color": "#f4cccc",
+      "color": "#f0e442",
       "shiftCoords": [0, -0.8],
       "nodes": [
         {
@@ -336,7 +336,7 @@
     {
       "name": "InstructorTrainer",
       "label": "Instructor/\nTrainer",
-      "color": "#c9daf8",
+      "color": "#009e73",
       "shiftCoords": [0, 0],
       "nodes": [
         {
