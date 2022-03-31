@@ -123,8 +123,8 @@
   },
   "lines": [
     {
-      "name": "ResearcherDeveloper",
-      "label": "Researcher\nDeveloper",
+      "name": "BeginnerResearchCoder",
+      "label": "Beginner\nResearch\nCoder",
       "color": "#d55e00",
       "_textCoords": [0, 14],
       "shiftCoords": [0, 0],
@@ -163,6 +163,7 @@
         },
         {
           "coords": [22, 14],
+          "marker": "interchange",
           "name": "ComputationalSkills",
           "labelPos": "S",
           "shiftCoords": [0, 0],
@@ -176,6 +177,7 @@
         },
         {
           "coords": [30, 12],
+          "marker": "interchange",
           "name": "GoodEnoughPractices",
           "labelPos": "E",
           "shiftCoords": [0, 1],
@@ -211,8 +213,8 @@
       ]
     },
     {
-      "name": "IntermediateRSE",
-      "label": "Intermediate\nRSE",
+      "name": "IntermediateResearchCoder",
+      "label": "Intermediate\nResearch\nCoder",
       "color": "#0072b2",
       "shiftCoords": [0, 0],
       "nodes": [
@@ -320,6 +322,7 @@
         },
         {
           "coords": [63, -0.8],
+          "marker": "interchange",
           "name": "BuildingWebsitesWithJekyll",
           "labelPos": "S",
           "shiftCoords": [0, -0.8]
@@ -350,6 +353,7 @@
         },
         {
           "coords": [14, -16],
+          "marker": "interchange",
           "name": "TasterInstructorTraining",
           "labelPos": "E",
           "shiftCoords": [0, -1],
