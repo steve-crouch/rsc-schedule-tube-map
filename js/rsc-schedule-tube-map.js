@@ -26,31 +26,32 @@ function wrap(text) {
 }
 
 var container = d3.select("#tube-map");
-var json_datafile = container.attr("data-csv");
-var height = container.attr("height");
+var json_datafile = container.attr("map-csv");
+var map_x = container.attr("map-x");
+var map_y = container.attr("map-y");
+var width = container.attr("map-width");
+var height = container.attr("map-height");
+var map_min_zoom = container.attr("map-min-zoom");
+var map_max_zoom = container.attr("map-max-zoom");
 
 d3.json(json_datafile)
-.then(jsondata => {
+  .then(jsondata => {
+
   var activities = jsondata;
 
   var map = d3
     .tubeMap()
-    .margin({
-      top: 10,
-      right: 10,
-      bottom: 10,
-      left: 10,
-    })
     .on("click", function (name) {
       window.location.href = activities.stations[name].website;
     });
   container.datum(activities).call(map);
+  container.style("width", width);
   container.style("height", height);
 
   var svg = container.select("svg");
   svg
     .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("viewBox", "0 0 800 400")
+    .attr("viewBox", map_x + " " + map_y + " " + width + " " + height)
     .attr("class", "svg-map-content");
 
   // Revisit each line adding its label anchored to the first line waypoint
@@ -79,14 +80,14 @@ d3.json(json_datafile)
   });
 
   var zoom = d3.zoom()
-    .scaleExtent([0.9, 1.5])
-    .translateExtent([[-120, -30], [750, height]])
+    .scaleExtent([map_min_zoom, map_max_zoom])
+    .translateExtent([[map_x, map_y], [width, height]])
     .on("zoom", zoomed);
   var zoomContainer = svg.call(zoom);
-  var initialScale = 0.9;
+  var initialScale = 1.0;
   zoom.scaleTo(zoomContainer, initialScale);
 
-  var initialTranslate = [0, 60];
+  var initialTranslate = [0, 0];
   zoom.translateTo(
     zoomContainer,
     initialTranslate[0],

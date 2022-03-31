@@ -24,6 +24,7 @@ text {
   width: 80%;
   /* height: 400px; */
   /* padding-bottom: 35%; */
+  margin-left: 10px;
   vertical-align: top;
   overflow: hidden;
 }
