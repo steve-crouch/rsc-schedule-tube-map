@@ -1,29 +1,8 @@
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow: hidden;
-}
-
-text {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 14px;
-  cursor: pointer;
-  font-weight: normal;
-}
-
 .svg-map-container {
   display: inline-block;
   border: 1px solid lightgray;
   position: relative;
   width: 80%;
-  /* height: 400px; */
-  /* padding-bottom: 35%; */
   margin-left: 10px;
   vertical-align: top;
   overflow: hidden;
@@ -36,13 +15,16 @@ text {
   left: 0;
 }
 
+.svg-map-content text {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
 .title {
   font-family: "Roboto Mono", sans-serif;
   font-size: 18px;
   cursor: pointer;
   font-weight: normal;
-}
-
-:focus {
-  outline: 0;
 }

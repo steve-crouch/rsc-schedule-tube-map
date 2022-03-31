@@ -45,7 +45,6 @@ d3.json(json_datafile)
       window.location.href = activities.stations[name].website;
     });
   container.datum(activities).call(map);
-  container.style("width", width);
   container.style("height", height);
 
   var svg = container.select("svg");
@@ -76,7 +75,6 @@ d3.json(json_datafile)
           .call(wrap);    // reformat the text over multiple lines
       }
     });
-
   });
 
   var zoom = d3.zoom()
