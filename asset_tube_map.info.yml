@@ -1,0 +1,10 @@
+name: Asset Tube Map
+description: Shows a series of assets in an interconnected tube map.
+package: Custom
+
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - asset_tube_map/d3-tube-map

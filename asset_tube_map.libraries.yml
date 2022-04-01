@@ -1,0 +1,11 @@
+d3-tube-map:
+  version: 1.x
+  css:
+    theme:
+      css/tubeMap.css: {}
+      'https://fonts.googleapis.com/css?family=Hammersmith+One:400,700': { type: external }
+      'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700': { type: external }
+  js:
+    js/d3.v6.js: {}
+    js/d3-tube-map.min.js: {}
+    js/rsc-schedule-tube-map.js: {}

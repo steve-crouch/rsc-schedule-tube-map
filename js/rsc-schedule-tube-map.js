@@ -26,7 +26,7 @@ function wrap(text) {
 }
 
 var container = d3.select("#tube-map");
-var json_datafile = container.attr("map-csv");
+var json_datafile = "../data/" + container.attr("map-csv");
 var map_x = container.attr("map-x");
 var map_y = container.attr("map-y");
 var width = container.attr("map-width");
@@ -45,7 +45,7 @@ d3.json(json_datafile)
       window.location.href = activities.stations[name].website;
     });
   container.datum(activities).call(map);
-  container.style("height", height);
+  container.style("height", height + "px");
 
   var svg = container.select("svg");
   svg
@@ -69,7 +69,7 @@ d3.json(json_datafile)
           .attr("dy", 0)
           .attr("text-anchor", "end")
           .attr("class", "title")
-          .style("font-size", "1.0em")
+          .style("font-size", "0.8em")
           .style("font-weight", "bold")
           .text(line.label)
           .call(wrap);    // reformat the text over multiple lines
@@ -82,7 +82,7 @@ d3.json(json_datafile)
     .translateExtent([[map_x, map_y], [width, height]])
     .on("zoom", zoomed);
   var zoomContainer = svg.call(zoom);
-  var initialScale = 1.0;
+  var initialScale = map_min_zoom;
   zoom.scaleTo(zoomContainer, initialScale);
 
   var initialTranslate = [0, 0];
