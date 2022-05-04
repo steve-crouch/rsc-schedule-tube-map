@@ -31,6 +31,7 @@ var map_x = container.attr("map-x");
 var map_y = container.attr("map-y");
 var width = container.attr("map-width");
 var height = container.attr("map-height");
+var height_prop = container.attr("map-height-proportion");
 var map_min_zoom = container.attr("map-min-zoom");
 var map_max_zoom = container.attr("map-max-zoom");
 
@@ -45,7 +46,7 @@ d3.json(json_datafile)
       window.location.href = activities.stations[name].website;
     });
   container.datum(activities).call(map);
-  container.style("height", height + "px");
+  container.style("padding-top", height_prop);
 
   var svg = container.select("svg");
   svg
