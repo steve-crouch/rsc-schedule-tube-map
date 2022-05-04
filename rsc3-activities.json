@@ -2,10 +2,10 @@
   "stations": {
     "SoftwareSurgery": {
       "name": "Software Surgery",
-      "label": "Software Surgery",
+      "label": "Software\nSurgery",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.software.ac.uk/software-surgery",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -17,7 +17,7 @@
       "label": "Computational\nSkills",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -29,7 +29,7 @@
       "label": "Good Enough Scientific\nComputing Practices",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.eventbrite.co.uk/e/good-enough-scientific-computing-practices-tickets-321348902217",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -41,7 +41,19 @@
       "label": "Managing Academic\nSoftware Development",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.eventbrite.co.uk/e/managing-academic-software-development-tickets-311779379517",
+      "phone": "<phone>",
+      "position": {
+        "lat": 52.20386,
+        "lon": 0.139356
+      }
+    },
+    "EmpoweringCommunities": {
+      "name": "Empowering Communities with Open Principles",
+      "label": "Empowering Communities\nwith Open Principles",
+      "place_id": "<none>",
+      "address": "<none>",
+      "website": "https://www.eventbrite.co.uk/e/empowering-communities-with-open-principles-tickets-328167687387",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -53,7 +65,7 @@
       "label": "Mentorship",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.software.ac.uk/learning-code-mentorship-programme",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -65,31 +77,19 @@
       "label": "Intermediate\nRS Skills",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.eventbrite.co.uk/e/intermediate-research-software-development-skills-python-tickets-321334148087",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
         "lon": 0.139356
       }
     },
-    "TasterWorkingWithCarpInf": {
-      "name": "Taster: Working with Carpentries Lesson Infrastructure",
-      "label": "Taster: Working with Carpentries\nLesson Infrastructure",
+    "CollaborativeLessonDevelopmentCarpWorkbench": {
+      "name": "Collaborative Lesson Development with the Carpentries Workbench",
+      "label": "Collaborative Lesson Development\nwith the Carpentries Workbench",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
-      "phone": "<phone>",
-      "position": {
-        "lat": 52.20386,
-        "lon": 0.139356
-      }
-    },
-    "TasterLessonDevelopment": {
-      "name": "Taster: Lesson Development Workshop",
-      "label": "Taster: Lesson\nDevelopment Workshop",
-      "place_id": "<none>",
-      "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.eventbrite.co.uk/e/collaborative-lesson-development-with-the-carpentries-workbench-tickets-313742752017",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -101,19 +101,19 @@
       "label": "Building Websites\nwith Jekyll &\nGitHub Pages",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.eventbrite.co.uk/e/building-websites-with-jekyll-github-pages-tickets-321290918787",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
         "lon": 0.139356
       }
     },
-    "TasterInstructorTraining": {
-      "name": "Taster: Instructor Training",
-      "label": "Taster: Instructor Training",
+    "SoftwareInstructorTraining": {
+      "name": "Software Instructor Training",
+      "label": "Software Instructor Training",
       "place_id": "<none>",
       "address": "<none>",
-      "website": "https://www.software.ac.uk/",
+      "website": "https://www.eventbrite.co.uk/e/software-instructor-training-tickets-333524369367",
       "phone": "<phone>",
       "position": {
         "lat": 52.20386,
@@ -142,7 +142,7 @@
           "coords": [8, 1],
           "marker": "interchange",
           "name": "SoftwareSurgery",
-          "labelPos": "S",
+          "labelPos": "W",
           "shiftCoords": [0.6, -0.4],
           "canonical": false
         },
@@ -231,8 +231,8 @@
           "coords": [7, 0],
           "marker": "interchange",
           "name": "SoftwareSurgery",
-          "labelPos": "S",
-          "shiftCoords": [0.6, -0.8],
+          "labelPos": "W",
+          "shiftCoords": [-0.2, 1],
           "canonical": true
         },
         {
@@ -257,10 +257,31 @@
           "coords": [30, 6]
         },
         {
-          "coords": [30, 1]
+          "coords": [30, -6.25]
         },
         {
-          "coords": [31, 0]
+          "coords": [31, -7.25]
+        },
+        {
+          "coords": [34, -7.25],
+          "marker": "interchange",
+          "name": "EmpoweringCommunities",
+          "labelPos": "S",
+          "shiftCoords": [-0.3, -1.0],
+          "labelShiftCoords": [-2, -2.2],
+          "canonical": true
+        },
+        {
+          "coords": [37, -7.25]
+        },
+        {
+          "coords": [38, -6.25]
+        },
+        {
+          "coords": [38, -1]
+        },
+        {
+          "coords": [39, 0]
         },
         {
           "coords": [43, 0],
@@ -286,25 +307,19 @@
       "shiftCoords": [0, -0.8],
       "nodes": [
         {
-          "coords": [0, -8.6]
+          "coords": [0, -8.10]
         },
         {
-          "coords": [14, -8.6],
+          "coords": [14, -8.10],
           "marker": "interchange",
-          "name": "TasterWorkingWithCarpInf",
-          "labelPos": "NE",
+          "name": "CollaborativeLessonDevelopmentCarpWorkbench",
+          "labelPos": "N",
           "shiftCoords": [-0.6, -1],
-          "labelShiftCoords": [0, 1.5],
+          "labelShiftCoords": [2.0, -4.5],
           "canonical": true
         },
         {
-          "coords": [43.2, -8.6],
-          "marker": "interchange",
-          "name": "TasterLessonDevelopment",
-          "labelPos": "SE",
-          "shiftCoords": [0.4, -1.7],
-          "labelShiftCoords": [1, -1.2],
-          "canonical": true
+          "coords": [43.2, -8.10]
         },
         {
           "coords": [44.2, -7]
@@ -354,10 +369,10 @@
         {
           "coords": [14, -16],
           "marker": "interchange",
-          "name": "TasterInstructorTraining",
-          "labelPos": "E",
+          "name": "SoftwareInstructorTraining",
+          "labelPos": "S",
           "shiftCoords": [0, -1],
-          "labelShiftCoords": [0.5, -1],
+          "labelShiftCoords": [0.5, -2.5],
           "canonical": true,
           "hide": false
         },
@@ -367,10 +382,10 @@
         {
           "coords": [15, -8],
           "marker": "interchange",
-          "name": "TasterWorkingWithCarpInf",
-          "labelPos": "NE",
+          "name": "CollaborativeLessonDevelopmentCarpWorkbench",
+          "labelPos": "N",
           "shiftCoords": [0, 0],
-          "labelShiftCoords": [0, 1.5],
+          "labelShiftCoords": [0.5, 0],
           "canonical": false,
           "hide": true
         },
@@ -378,13 +393,7 @@
           "coords": [42, -8]
         },
         {
-          "coords": [43, -7],
-          "marker": "interchange",
-          "name": "TasterLessonDevelopment",
-          "labelPos": "SE",
-          "shiftCoords": [0, 0],
-          "labelShiftCoords": [1, -1.2],
-          "canonical": false
+          "coords": [43, -7]
         },
         {
           "coords": [43, -1.7]
