@@ -1,35 +1,12 @@
 <?php
 
-/*
-use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\ds\Ds;
-use Drupal\Core\Entity\ContentEntityFormInterface;
-use Drupal\Core\Entity\Display\EntityDisplayInterface;
-use Drupal\Core\Entity\Entity\EntityFormDisplay;
-use Drupal\Core\Entity\Entity\EntityViewDisplay;
-use Drupal\Core\Entity\EntityInterface;
-use Drupal\Core\Form\ConfirmFormInterface;
-use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Render\Element;
-use Drupal\field_group\Element\VerticalTabs;
-use Drupal\field_group\FormatterHelper;
-*/
-
-/*
-function asset_tube_map_element_info_alter(array &$types) {
-  if (isset($types['page'])) {
-    $types['page']['#attached']['library'][] = 'asset_tube_map/d3-tube-map';
-  }
-}
-*/
-
 function asset_tube_map_preprocess_node(&$variables)
 {
     // Gets the content type of the node
     $x = $variables['node']->getType();
 
-    if ($x == 'page'){ // checks if it is data dashboard page
+    // Only works on blog articles and simple pages
+    if ($x == 'page' || $x == 'blog') {
         $variables['#attached']['library'][] = 'asset_tube_map/d3-tube-map';
     }
-
 }
